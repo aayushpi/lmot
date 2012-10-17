@@ -1,0 +1,7 @@
+
+<% @timeline.each do |timeline| %>
+	<div class="tweet">
+		<img src="<%= timeline.user.profile_image_url =%>" />
+		<p><%= timeline.text =%></p>
+	</div>
+<% end %>
